@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            height: 100vh;
+            font-family: Montserrat, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 100vw;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(30, 38%, 92%);
+        }
+        
+        main {
+            width: 33%;
+            height: 50%;
+            background-color: white;
+            display: flex;
+            border-radius: 10px;
+            overflow-x: hidden;
+            overflow: hidden;
+        }
+        
+        main>* {
+            width: 50%;
+            height: 100%;
+        }
+        
+        .text-container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: hsl(228, 12%, 48%);
+        }
+        
+        h2 {
+            font-size: 32px;
+            color: hsl(212, 21%, 14%);
+        }
+        
+        p {
+            font-size: 14px;
+            color: hsl(228, 12%, 48%);
+            line-height: 20px;
+        }
+        
+        h3 {
+            font-size: 36px;
+            color: hsl(158, 36%, 37%);
+        }
+        
+        h4 {
+            color: hsl(228, 12%, 48%);
+        }
+        
+        .btn {
+            width: 100%;
+            background-color: hsl(158, 36%, 37%);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 5px;
+            font-weight: 700;
+            color: white;
+        }
+        
+        @media (max-width:375px) {
+            main {
+                height: 80%;
+                width: 90%;
+                flex-direction: column;
+            }
+            main>* {
+                width: 100%;
+            }
+            .image {
+                height: 40%;
+            }
+            .texts {
+                height: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="image"> <img src="./images/image-product-desktop.jpg" alt="" width="100%" height="100%"></div>
+        <div class="texts">
+            <div class="text-container">
+                <h1>perfume</h1>
+                <h2> Gabrielle Essence Eau De Parfum</h2>
+                <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="price">
+                    <h3> $149.99</h3>
+                    <h4>$169.99</h4>
+                </div>
+                <div class="btn"><img src="./images/icon-cart.svg" alt=""> Add to Cart</div>
+
+            </div>
+        </div>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Sobowale khaleelulah</a>.
+        <!-- 
+
+
+ 
+
+
+
+ 
+  
+
+ 
+  
+  
+  </div> -->
+</body>
+
+</html>
